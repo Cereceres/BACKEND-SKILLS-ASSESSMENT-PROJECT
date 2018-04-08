@@ -1,0 +1,28 @@
+{
+  "name": "backend-skills-assessment-project",
+  "version": "1.0.0",
+  "description": "test backend-skills-assessment-project",
+  "main": "application.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cereceres/BACKEND-SKILLS-ASSESSMENT-PROJECT.git"
+  },
+  "bin": {
+    "application": "./application.js"
+  },
+  "keywords": [
+    "backend-skills-assessment-project"
+  ],
+  "author": "Jesus Cereceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cereceres/BACKEND-SKILLS-ASSESSMENT-PROJECT/issues"
+  },
+  "homepage": "https://github.com/Cereceres/BACKEND-SKILLS-ASSESSMENT-PROJECT#readme",
+  "dependencies": {
+    "mongoose": "^5.0.13"
+  }
+}
