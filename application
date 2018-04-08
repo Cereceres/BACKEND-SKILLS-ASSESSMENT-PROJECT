@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+const addJsonToUser = require('./lib/add-json-to-user');
+const getJsonFromUser = require('./lib/show-json-to-user');
+const listJsonFromUser = require('./lib/list-json-to-user');
+const sumJsonFromUser = require('./lib/sum-json-from-user');
+const parseJson = require('./lib/parse-json');
+const [ ,, user, action, json ] = process.argv;
+if (action === 'add' && user && json) addJsonToUser(user, parseJson(json))
+    .catch(({ message }) => console.error(message))
+    .then(() => process.exit(0));
+else if (json === undefined && user && action === 'list') listJsonFromUser(user)
+    .catch(({ message }) => console.error(message))
+    .then(() => process.exit(0));
+else if (json === undefined && user && action === 'sum') sumJsonFromUser(user)
+    .catch(({ message }) => console.error(message))
+    .then(() => process.exit(0));
+else if (json === undefined && user && action) getJsonFromUser(user, action)
+    .catch(({ message }) => console.error(message))
+    .then(() => process.exit(0));
