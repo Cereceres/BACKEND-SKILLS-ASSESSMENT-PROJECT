@@ -1,3 +1,16 @@
+# Install
+
+```bash
+npm install
+```
+
+# Install globally
+
+```bash
+npm install -g
+```
+
+
 # BACKEND-SKILLS-ASSESSMENT-PROJECT
 
 For this task you will be creating a Java application that can be run from the command line. This
@@ -22,24 +35,40 @@ ADD TRANSACTION
 This command should add a transaction to the user specified in <user_id> using the information specified in
 transaction_json. The transaction json will have the following format:
 
-    { “amount”: 1.23, “description”: “Joes Tacos”, “date”:”2018-12-30”, “user_id”: 345 }
+    { 
+        “amount”: 1.23, 
+        “description”: “Joes Tacos”, 
+        “date”:”2018-12-30”, 
+        “user_id”: 345 
+    }
 This command should print out a version of the transaction added with a unique id for the transaction like
 this:
 
-    { “transaction_id”: “2299ce24-9eaf-417f-82d6-e57f93777dc4”, “amount”: 1.23, “description”: “Joes Tacos”,
-    “date”:”2018-12-30”, “user_id”: 345 }
+    { 
+        “transaction_id”: “2299ce24-9eaf-417f-82d6-e57f93777dc4”, 
+        “amount”: 1.23, 
+        “description”: “Joes Tacos”,
+        “date”:”2018-12-30”, 
+        “user_id”: 345 
+    }
 
 
 SHOW TRANSACTION
 
     ./application <user_id> <transaction_id>
+
 This command should return the transaction specified in the transaction_id. If the user_id is not the user_id
 that corresponds with the user_id for the specified transaction, you should print out
 Transaction not found
 If the transaction does exists, you should print out the information for the transaction like this:
 
-    { “transaction_id”: “2299ce24-9eaf-417f-82d6-e57f93777dc4”, “amount”: 1.23, “description”: “Joes Tacos”,
-    “date”:”2018-12-30”, “user_id”: 345 }
+    { 
+        “transaction_id”: “2299ce24-9eaf-417f-82d6-e57f93777dc4”, 
+        “amount”: 1.23, 
+        “description”: “Joes Tacos”,
+        “date”:”2018-12-30”, 
+        “user_id”: 345 
+    }
 
 
 LIST TRANSACTIONS
@@ -50,10 +79,20 @@ transactions should be in chronological order. If the user_id does not exist, th
 an empty list. You should print the items in the following format:
 
     [
-    { “transaction_id”: “2299ce24-9eaf-417f-82d6-e57f93777dc4”, “amount”: 1.23, “description”: “Joes Tacos”,
-    “date”:”2018-12-30”, “user_id”: 345 },
-    { “transaction_id”: “5467ce24-9eaf-417f-82d6-e57f4444444”, “amount”: 5.26, “description”: “Freds’s Tacos”,
-    “date”:”2018-12-19”, “user_id”: 345 }
+        { 
+            “transaction_id”: “2299ce24-9eaf-417f-82d6-e57f93777dc4”, 
+            “amount”: 1.23, 
+            “description”: “Joes Tacos”,
+            “date”:”2018-12-30”, 
+            “user_id”: 345 
+        },
+        { 
+            “transaction_id”: “5467ce24-9eaf-417f-82d6-e57f4444444”, 
+            “amount”: 5.26, 
+            “description”: “Freds’s Tacos”,
+            “date”:”2018-12-19”, 
+            “user_id”: 345 
+        }
     ]
 SUM TRANSACTIONS
 

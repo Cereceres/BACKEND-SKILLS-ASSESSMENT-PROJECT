@@ -10,9 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/Cereceres/BACKEND-SKILLS-ASSESSMENT-PROJECT.git"
   },
-  "bin": {
-    "application": "./application.js"
+  "engines" : {
+    "node" : ">=6.0"
   },
+  "engineStrict" : true,
+  "bin": {
+    "application-backend-assessment": "./application"
+  },
+  "preferGlobal": true,
   "keywords": [
     "backend-skills-assessment-project"
   ],
