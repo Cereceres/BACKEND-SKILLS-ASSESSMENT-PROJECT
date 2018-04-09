@@ -27,7 +27,7 @@ database)
 Your command line should be able to handle the following command line inputs
 
 
-ADD TRANSACTION
+## ADD TRANSACTION
 
     ./application <user_id> add <transaction_json>
 
@@ -53,7 +53,7 @@ this:
     }
 
 
-SHOW TRANSACTION
+## SHOW TRANSACTION
 
     ./application <user_id> <transaction_id>
 
@@ -71,7 +71,7 @@ If the transaction does exists, you should print out the information for the tra
     }
 
 
-LIST TRANSACTIONS
+## LIST TRANSACTIONS
 
     ./application <user_id> list
 This command should print all the transactions associated with the user specified by user_id. The
@@ -94,7 +94,7 @@ an empty list. You should print the items in the following format:
             “user_id”: 345 
         }
     ]
-SUM TRANSACTIONS
+## SUM TRANSACTIONS
 
     ./application <user_id> sum
 This command should sum all the transactions associated with the user specified by user_id. It should print
