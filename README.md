@@ -9,7 +9,11 @@ npm install
 ```bash
 npm install -g
 ```
+# Usage
 
+```bash
+application-backend-assessment  <user_id> add <transaction_json>
+```
 
 # BACKEND-SKILLS-ASSESSMENT-PROJECT
 
